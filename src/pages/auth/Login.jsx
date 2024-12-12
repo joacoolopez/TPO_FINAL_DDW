@@ -20,7 +20,7 @@ export const Login = () => {
   const onSubmit = handleSubmit((data) => {
     
     const { email, password } = data;
-    if (email === "admin" && password === "admin") {
+    if (email === "mclovin@cineflix.com" && password === "admin") {
       handleAuth(true);
       localStorage.setItem("auth", JSON.stringify(true));
       return;
