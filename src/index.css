@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family:  "Montserrat", "Raleway", "Roboto", sans-serif;
+  background:#141414;
+  /* min-height: 100vh; */
+  /* position: relative; */
+  /* background: linear-gradient(
+    0deg,
+    rgba(52, 14, 97, 1) 44%,
+    rgba(16, 4, 44, 1) 100%
+  ); */
+}
+
+.background {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 150px;
+}
+
+.background-auth {
+  background: #141414;
+  background-image: linear-gradient(
+      rgba(20, 20, 20, 0.85), /* Más cercano a #141414 */
+      rgba(51, 51, 51, 0.6) /* Tonos oscuros complementarios */
+    ),
+    url("/Background_Landing.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+.background-home {
+  background:#141414;
+  /* background: linear-gradient(
+    0deg,
+    rgba(52, 14, 97, 1) 44%,
+    rgba(16, 4, 44, 1) 100%
+  ); */
+}
+
+.btn-primary {
+  @apply bg-[#000] hover:bg-[#6d6d6d] text-white py-2 px-4 rounded-lg transition-all;
+}
+
+/* spinner */
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  color: rgb(201, 194, 194);
+}
+
+.spinning {
+  animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*slider*/
+
+/* .slick-prev,
+.slick-next {
+  display: none; 
+
+}
+@media screen and (min-width: 768px) {
+  .slick-prev,
+.slick-next {
+  display: block; 
+
+}
+ 
+} */
+
+.slick-disabled {
+  /* display: none !important; */
+  cursor: default !important;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0;
+}
+
+.navbar-active {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.background-sidebar {
+  background: rgb(20, 20, 20);
+  background: linear-gradient(
+    0deg,
+    rgba(20, 20, 20, 1) 44%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
